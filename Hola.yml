@@ -1,0 +1,13 @@
+name: Mi Primer Workflow - Hola Mundo
+
+# Evento que dispara el workflow (cuando se hace push)
+on: [push]
+
+jobs:
+  saludar:
+    # Runner que se usará
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Imprimir saludo en consola
+        run: echo "¡Hola! Este es mi primer workflow en GitHub Actions funcionando."
